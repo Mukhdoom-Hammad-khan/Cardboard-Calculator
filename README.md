@@ -39,6 +39,24 @@ Perform calculations by clicking the buttons on the calculator interface.
 Use the "Clear" button to reset the expression, and "Delete" to remove the last character.
 Use the square root button (√) to calculate the square root of the expression.
 
+## Flask Structure
+
+Cardboard-Calculator/
+│
+├── app.py                   # Main Python file to run the Flask app
+├── templates/               # Folder for HTML templates
+│   ├── index.html           # Main page (calculator)
+│   ├── login.html           # Login page
+│   └── register.html        # Registration page
+│
+├── static/                  # Folder for static files (CSS)
+│   └── css/                 # Folder for CSS files
+│       └── style.css        # Main stylesheet
+│
+├── LICENSE                  # License file for the project
+├── README.md                # Project description
+└── requirements.txt         # File for listing dependencies (flask, etc.)
+
 ## Author
 Mukhdoom Hammad Khan
 
