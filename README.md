@@ -37,6 +37,9 @@ A web-based calculator application built using Flask, allowing users to perform 
 ![Login](images-&-videos/Login.jpg)
 ![Home](images-&-videos/Home.jpg)
 
+## Video
+
+![Video](images-&-videos/Calculator.mp4)
 
 ## Usage
 
