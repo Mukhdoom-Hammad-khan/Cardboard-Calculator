@@ -20,13 +20,15 @@ A web-based calculator application built using Flask, allowing users to perform 
 
 1. Clone the repository to your local machine.
    ```bash
-   git clone 
+   git clone https://github.com/Mukhdoom-Hammad-khan/Cardboard-Calculator.git
 
    
 2. Install required dependencies:
+   ```bash
    pip install flask
 
-3. Run the application:
+4. Run the application:
+   ```bash
    python app.py
 
 
@@ -37,5 +39,8 @@ Perform calculations by clicking the buttons on the calculator interface.
 Use the "Clear" button to reset the expression, and "Delete" to remove the last character.
 Use the square root button (√) to calculate the square root of the expression.
 
-##License
+## Author
+Mukhdoom Hammad Khan
+
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
