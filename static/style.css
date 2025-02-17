@@ -1,0 +1,220 @@
+body {
+    background-color: rgb(219, 217, 217);
+}
+
+header {
+    background-color: rgb(155, 145, 133);
+    padding: 2vh;
+    border-radius: 5px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    display: inline-block; /* we have to use inline-block if we are using transform on link */
+    transition: transform 0.1s ease-in-out;
+}
+
+a:hover {
+    color: rgba(44, 44, 44, 0.582);
+    transform: scale(1.1); /* using transform will not effect the srounding links, if we use font size then it will slightly moves the other links */
+}
+
+.links {
+    justify-content: right;
+    padding-right: 20px;
+}
+
+.title {
+    display: flex;
+    margin: 0%;
+}
+
+.container {
+    background-color: rgb(155, 145, 133);
+    display: flex;
+    border-radius: 15px;
+    margin-top: 5rem;
+    height: 77vh;
+    width: 34.5vw;
+    position: absolute;
+    top: 5%;
+    left: 32%;
+    overflow: auto;
+    border-style: dashed;
+    border-color: rgba(0, 0, 0, 0.452);
+    box-shadow: 5px 5px 10px gray;
+}
+
+input {
+    border-radius: 10px;
+    margin: 17px;
+    padding: 3px;
+    height: 70px;
+    width: 30.9vw;
+    border: none;
+    padding-left: 20px;
+    font-weight: bolder;
+    font-size: x-large;
+    cursor: default; 
+}
+
+button {
+    margin-right: 3%;
+    height: 7vh;
+    width: 6.18vw;
+    border-radius: 15px;
+    border: none;
+    margin: 18px;
+    font-weight: bolder;
+    font-size: larger;
+    transition: transform 0.1s ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+
+.sub {
+    position: absolute; /*to enable a button move seprately */
+    top: 51.4vh;
+    right: 0%;
+    height: 18.6vh;
+
+}
+
+.section {
+    display: flex;
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    top: 25%;
+    left: 25%;
+    background-color: rgb(155, 145, 133);
+    border-radius: 15px;
+    border-color: rgba(0, 0, 0, 0.452);
+    box-shadow: 5px 5px 10px gray;
+    border-style: dashed;
+}
+
+h1 {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    font-family: Helvetica, sans-serif;
+    color: rgba(44, 44, 44, 0.582);
+    font-size: 40px;
+    cursor: default;
+}
+
+label {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.lo {
+    position: absolute;
+    margin-top: 1%;
+    height: 5vh;
+    width: 46.2vw;
+    font-size: small;
+    transition: transform 0.1 ease-in-out;
+}
+
+.lo:hover {
+    transform: scale(1.01);
+}
+
+.pas {
+    position: absolute;
+    margin-top: 14.1%;
+    height: 5vh;
+    width: 46.2vw;
+    font-size: small;
+    transition: transform 0.1 ease-in-out;
+}
+
+.pas:hover {
+    transform: scale(1.01);
+}
+
+.as {
+    margin-top: 11%;
+    position: absolute;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.l {
+    position: absolute;
+    margin-top: 28%;
+    margin-left: 65%;
+    width: 16vw;
+}
+
+p {
+    position: absolute;
+    margin-left: 3%;
+    margin-top: 30%;
+    font-size: large;
+}
+
+#q {
+    font-size: small;
+    text-decoration: underline;
+}
+
+#q:hover {
+    text-decoration: none;
+}
+
+.alert {
+    background-color: rgba(255, 255, 255, 0.719);
+    position: absolute;
+    padding: 2.5em;
+    display: flex;
+    top: 1.5%;
+    right: 38.7%;
+    border-radius: 10px;
+}
+
+.alert-2 {
+    background-color: rgba(255, 255, 255, 0.719);
+    position: absolute;
+    padding: 2.5em;
+    display: flex;
+    top: 1.5%;
+    right: 42.6%;
+    border-radius: 10px;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;  /* Fully visible */
+    }
+    100% {
+        opacity: 0;  /* Fully invisible */
+        
+    }
+}
+
+.alert {
+    animation: fadeOut 4s ease-in-out forwards; /* Apply fade-out animation */
+}
+
+.alert-2 {
+    animation: fadeOut 4s ease-in-out forwards; /* Apply fade-out animation */
+}

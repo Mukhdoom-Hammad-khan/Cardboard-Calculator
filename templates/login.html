@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Calculator</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <a href="{{ url_for('login') }}">Cardboard Calculator</a>
+        </div>
+        <nav>
+            <div class="links">
+                <a href="{{ url_for('login') }}">Login</a>
+                <a href="{{ url_for('register') }}">Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <h1>Login</h1>
+
+    <div class="section">
+        <form method="post">
+            <br><br>
+            
+            <label for="name">User Name</label>
+            <br>
+            <input class="lo" type="text" name="name" id="name" placeholder="Enter User Name" required>
+            
+            <label for="pass" class="as">Password</label>
+            <input class="pas" type="text" name="pass" id="pass" placeholder="Enter Password" required>
+
+            <p>You don't have an account ?<a id="q" href="{{ url_for('register') }}">Register</a></p>
+
+            <button class="l">Submit</button>
+        </form>
+    </div>
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert-2">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}    
+
+</body>
+</html>

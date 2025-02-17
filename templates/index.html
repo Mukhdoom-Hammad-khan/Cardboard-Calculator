@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Cardboard Calculator</title>
+</head>
+<body>
+
+    <header>
+        <div class="title">
+            <a href="{{ url_for('index') }}">Cardboard Calculator</a>
+        </div>
+        <nav>
+            <div class="links">
+                <a href="{{ url_for('index') }}">Home</a>
+                <a href="{{ url_for('login') }}">Login</a>
+                <a href="{{ url_for('register') }}">Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <form method="POST">
+            <input type="text" name="display" value="{{ expression }}" readonly>
+            
+            <input type="hidden" name="expression" value="{{ expression }}"> <!-- to hold data (whatever button we press it will concatinate here) -->
+            
+            <br><br>
+    
+            <button type="submit" name="button" value="1">1</button>
+            <button type="submit" name="button" value="2">2</button>
+            <button type="submit" name="button" value="3">3</button>
+            <button type="submit" name="button" value="+">+</button>
+            <br>
+    
+            <button type="submit" name="button" value="4">4</button>
+            <button type="submit" name="button" value="5">5</button>
+            <button type="submit" name="button" value="6">6</button>
+            <button type="submit" name="button" value="-">-</button>
+            <br>
+    
+            <button type="submit" name="button" value="7">7</button>
+            <button type="submit" name="button" value="8">8</button>
+            <button type="submit" name="button" value="9">9</button>
+            <button type="submit" name="button" value="*">×</button>
+            <br>
+    
+            <button type="submit" name="button" value="0">0</button>
+            <button type="submit" name="button" value=".">.</button>
+            <button type="submit" name="button" value="/">÷</button>
+            <button class="sub" type="submit" name="button" value="=">=</button>
+            <br>
+    
+            <button type="submit" name="button" value="C">Clear</button>
+            <button type="submit" name="button" value="D">Delete</button>
+            <button type="submit" name="button" value="**0.5">√</button>
+
+        </form>
+    </div>
+</body>
+</html>
