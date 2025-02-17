@@ -41,6 +41,7 @@ Use the square root button (√) to calculate the square root of the expression.
 
 ## Flask Structure
 
+```graphql
 Cardboard-Calculator/
 │
 ├── app.py                   # Main Python file to run the Flask app
