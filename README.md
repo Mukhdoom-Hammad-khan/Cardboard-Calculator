@@ -43,4 +43,4 @@ Use the square root button (√) to calculate the square root of the expression.
 Mukhdoom Hammad Khan
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
