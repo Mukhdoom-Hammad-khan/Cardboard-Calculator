@@ -57,8 +57,7 @@ Use the square root button (√) to calculate the square root of the expression.
    │   └── register.html        # Registration page
    │
    ├── static/                  # Folder for static files (CSS)
-   │   └── css/                 # Folder for CSS files
-   │       └── style.css        # Main stylesheet
+   │     └── style.css        # Main stylesheet
    │
    ├── LICENSE                  # License file for the project
    ├── README.md                # Project description
