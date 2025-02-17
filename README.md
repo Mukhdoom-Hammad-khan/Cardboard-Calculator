@@ -31,6 +31,12 @@ A web-based calculator application built using Flask, allowing users to perform 
    ```bash
    python app.py
 
+## Screenshots
+
+![Register](images & videos/Screenshot 2025-02-17 180019.jpg)
+![Login](images & videos/Screenshot 2025-02-17 180040.jpg)
+![Home](images & videos/Screenshot 2025-02-17 180123.jpg)
+
 
 ## Usage
 
